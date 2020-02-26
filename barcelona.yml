@@ -9,5 +9,5 @@ environments:
         memory: 256
         command: sh /start.sh
         listeners:
-          - endpoint: hello
+          - endpoint: hello2
             health_check_path: /
