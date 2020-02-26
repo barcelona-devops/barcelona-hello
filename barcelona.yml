@@ -1,0 +1,12 @@
+environments:
+  hello:
+    name: hello
+    image_name: quay.io/dsiawdegica/hello
+    scheduled_tasks: []
+    services:
+      - name: web
+        service_type: web
+        memory: 256
+        listeners:
+          - endpoint: hello
+            health_check_path: /
