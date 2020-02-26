@@ -7,6 +7,7 @@ environments:
       - name: web
         service_type: web
         memory: 256
+        command: sh /start.sh
         listeners:
           - endpoint: hello
             health_check_path: /
