@@ -10,9 +10,9 @@ environments:
         memory: 256
         command: sh /start.sh
         listeners:
-          - endpoint: hello2
+          - endpoint: hello
             health_check_path: /
         port_mappings:
           - lb_port: 80
             container_port: 8080
-
+            protocol: http
