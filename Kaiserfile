@@ -1,0 +1,13 @@
+dockerfile 'Dockerfile'
+
+db 'alpine',
+   port: 5432,
+   data_dir: '/data',
+   params: '',
+   waitscript_params: '',
+   waitscript: 'hello'
+
+app_params ''
+
+expose '8080'
+db_reset_command 'echo hello'

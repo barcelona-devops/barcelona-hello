@@ -12,3 +12,7 @@ environments:
         listeners:
           - endpoint: hello2
             health_check_path: /
+        port_mappings:
+          - lb_port: 80
+            container_port: 8080
+
