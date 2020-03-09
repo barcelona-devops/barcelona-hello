@@ -6,7 +6,6 @@ environments:
     services:
       - name: web
         service_type: web
-        cpu: 128
         memory: 256
         command: sh /start.sh
         listeners:
