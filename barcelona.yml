@@ -8,10 +8,7 @@ environments:
         service_type: web
         memory: 256
         command: sh /start.sh
+        web_container_port: 8080
         listeners:
           - endpoint: hello
             health_check_path: /
-        port_mappings:
-          - lb_port: 80
-            container_port: 8080
-            protocol: http
